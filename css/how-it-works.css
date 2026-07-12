@@ -1,0 +1,335 @@
+.work-hero {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(22, 163, 74, 0.12), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.work-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.work-hero-text h1 {
+  color: var(--dark-green);
+  font-size: clamp(40px, 5.5vw, 72px);
+  line-height: 1.25;
+  font-weight: 900;
+  margin: 18px 0;
+}
+
+.work-hero-text p {
+  color: #64748b;
+  font-size: 21px;
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.work-mini-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 42px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.mini-chat {
+  background: #f8fafc;
+  border-radius: 32px;
+  padding: 26px;
+  border: 1px solid var(--border);
+}
+
+.chat-line {
+  max-width: 85%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.chat-line.bot {
+  background: white;
+  color: var(--dark-green);
+  border-bottom-right-radius: 4px;
+}
+
+.chat-line.user {
+  background: var(--primary);
+  color: white;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-buttons {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.chat-buttons span {
+  background: #dcfce7;
+  color: var(--dark-green);
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.journey-section {
+  background: white;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.journey-step {
+  position: relative;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 36px 30px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 81, 50, 0.05);
+  transition: 0.35s ease;
+  overflow: hidden;
+}
+
+.journey-step::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: rgba(22, 163, 74, 0.08);
+  border-radius: 50%;
+  top: -55px;
+  left: -55px;
+}
+
+.journey-step:hover {
+  transform: translateY(-9px);
+  border-color: #86efac;
+  box-shadow: var(--shadow);
+}
+
+.journey-number {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  color: #bbf7d0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.journey-icon {
+  width: 72px;
+  height: 72px;
+  margin: 15px auto 20px;
+  display: grid;
+  place-items: center;
+  background: #dcfce7;
+  border-radius: 24px;
+  font-size: 34px;
+}
+
+.journey-step h3 {
+  color: var(--dark-green);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.journey-step p {
+  color: #64748b;
+  font-size: 17px;
+}
+
+.roles-section {
+  background: var(--light-gray);
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.role-card {
+  border-radius: 36px;
+  padding: 45px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 30px rgba(15, 81, 50, 0.06);
+}
+
+.user-role {
+  background: white;
+}
+
+.tech-role {
+  background: linear-gradient(135deg, var(--dark-green), var(--primary));
+  color: white;
+}
+
+.role-card span {
+  display: inline-flex;
+  background: #dcfce7;
+  color: var(--primary);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.tech-role span {
+  background: rgba(255,255,255,.18);
+  color: white;
+}
+
+.role-card h2 {
+  font-size: 38px;
+  line-height: 1.35;
+  margin-bottom: 15px;
+}
+
+.user-role h2 {
+  color: var(--dark-green);
+}
+
+.role-card p,
+.role-card li {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.user-role p,
+.user-role li {
+  color: #64748b;
+}
+
+.role-card ul {
+  margin-top: 18px;
+  padding-right: 22px;
+}
+
+.system-flow {
+  background: white;
+}
+
+.flow-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.flow-line div {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 18px 24px;
+  color: var(--dark-green);
+  font-weight: 900;
+  box-shadow: 0 10px 25px rgba(15, 81, 50, .05);
+}
+
+.flow-line span {
+  color: var(--primary);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+@media (max-width: 950px) {
+  .work-hero-grid,
+  .roles-grid,
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-hero-text {
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .role-card {
+    padding: 32px 24px;
+  }
+}
+  .two-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.flow-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 32px;
+  padding: 36px;
+  box-shadow: 0 12px 30px rgba(15, 81, 50, 0.06);
+}
+
+.flow-card h3 {
+  color: var(--dark-green);
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.mini-flow {
+  display: grid;
+  gap: 14px;
+}
+
+.mini-flow span {
+  display: block;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 14px 18px;
+  color: var(--dark-green);
+  font-weight: 900;
+}
+
+.mini-flow b {
+  width: 34px;
+  height: 34px;
+  background: #dcfce7;
+  color: var(--primary);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .two-flow-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.service-process-box {
+  background: linear-gradient(135deg, var(--dark-green), var(--primary));
+  border-radius: 42px;
+  padding: 55px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 28px 60px rgba(22, 163, 74, .25);
+}
+
+.service-process-box .btn {
+  width: 260px;
+  min-width: 260px;
+  height: 60px;
+  justify-content: center;
+  color: var(--dark-green);
+}
+
+

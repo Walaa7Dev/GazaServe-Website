@@ -1,0 +1,217 @@
+.page-hero {
+  background: linear-gradient(180deg, #F8FAFC, #FFFFFF);
+  text-align: center;
+  padding-top: 60px;
+}
+
+.page-badge {
+  display: inline-block;
+  color: var(--primary);
+  background: #DCFCE7;
+  border: 1px solid #86EFAC;
+  padding: 7px 18px;
+  border-radius: 999px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.page-hero h1 {
+  color: var(--dark-green);
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.35;
+  max-width: 950px;
+  margin: auto;
+  font-weight: 900;
+}
+
+.page-hero p {
+  color: #64748B;
+  font-size: 21px;
+  max-width: 780px;
+  margin: 22px auto 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.about-text span {
+  color: var(--primary);
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.about-text h2 {
+  color: var(--dark-green);
+  font-size: 44px;
+  margin: 12px 0 18px;
+}
+
+.about-text p {
+  color: #64748B;
+  font-size: 19px;
+  margin-bottom: 16px;
+}
+
+.about-card {
+  background: linear-gradient(135deg, var(--dark-green), var(--primary));
+  color: white;
+  border-radius: 34px;
+  padding: 45px;
+  box-shadow: var(--shadow);
+}
+
+.about-card h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 19px;
+}
+
+.problem {
+  background: var(--light-gray);
+}
+
+.about-values {
+  background: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h2 {
+    font-size: 34px;
+  }
+}
+  .about-hero {
+  position: relative;
+  min-height: calc(100vh - 86px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 50%, rgba(22, 163, 74, 0.16), transparent 25%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(22, 163, 74, 0.18) 2px, transparent 2px);
+  background-size: 34px 34px;
+  opacity: 0.35;
+  mask-image: linear-gradient(to left, black 0%, transparent 45%);
+  pointer-events: none;
+}
+
+.map-bg {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 420px;
+  height: 100%;
+  opacity: 0.13;
+  background:
+    linear-gradient(120deg, transparent 20%, rgba(15, 81, 50, 0.5) 21%, transparent 22%),
+    linear-gradient(35deg, transparent 35%, rgba(15, 81, 50, 0.35) 36%, transparent 37%),
+    linear-gradient(80deg, transparent 45%, rgba(15, 81, 50, 0.25) 46%, transparent 47%),
+    linear-gradient(145deg, transparent 55%, rgba(15, 81, 50, 0.3) 56%, transparent 57%);
+  transform: skewX(-10deg);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.about-hero-text {
+  text-align: center;
+}
+
+.about-hero-text h1 {
+  color: var(--dark-green);
+  font-size: clamp(42px, 5.5vw, 78px);
+  line-height: 1.28;
+  font-weight: 900;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.about-hero-text p {
+  color: #64748B;
+  font-size: 21px;
+  max-width: 760px;
+  margin: 0 auto 32px;
+}
+
+.about-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn.outline {
+  border: 1px solid var(--primary);
+  color: var(--dark-green);
+  background: white;
+}
+
+.btn.outline:hover {
+  background: #F0FDF4;
+  transform: translateY(-3px);
+}
+
+.about-phone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-phone::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: rgba(22, 163, 74, 0.13);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.about-phone img {
+  width: min(330px, 100%);
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 35px 35px rgba(15, 81, 50, 0.25));
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  transform: translateX(-50%);
+  background: #DCFCE7;
+  color: var(--dark-green);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: 900;
+}
