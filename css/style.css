@@ -704,6 +704,10 @@ img {
   .stats {
     grid-template-columns: 1fr 1fr;
   }
+html,body{
+  width: 100%;
+  overflow: hidden;
+}
 }
 
 
